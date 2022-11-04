@@ -1,4 +1,5 @@
 <?php require_once("header.php"); ?>
+<p id="myFunction"></p>
 <body onload='myFunction()'>
   <script>
     function myFunction(){
