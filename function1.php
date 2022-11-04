@@ -1,5 +1,6 @@
 <?php require_once("header.php"); ?>
 <p id="fruits"></p>
+<button type="button" onclick="myFunction()">Show me a fruit</button>
 <script>
   let a = 0;
   function myFunction() {
@@ -14,4 +15,4 @@
     return "Here is a fruit:<br>" + fruits[a];
   }
 </script>
-<button type="button" onclick="myFunction()">Show me a fruit</button>
+
