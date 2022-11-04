@@ -12,7 +12,7 @@
   function fruits(){
     let fruits = [ "Apple", "Orange", "Peach", "Banana", "Plum", "Grape", "Strawberry", "Blueberry", "Mango", "Your mom" ];
    
-    return "Here is a fruit:<br>${fruits[a]}."
+    return "Here is a fruit:<br>" + fruits[a]
   }
 </script>
 <button type="button" onclick="myFunction()">List Those Fruits!</button>
