@@ -1,6 +1,6 @@
 <?php require_once("header.php"); ?>
-<p id="fruits"></p>
 <button type="button" onclick="myFunction()">Show me a fruit</button>
+<p id="fruits"></p>
 <script>
   let a = 0;
   function myFunction() {
