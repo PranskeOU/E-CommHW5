@@ -2,7 +2,9 @@
   <script>
     function loadMessage(){
       let loadMessage = "This is it! This is the second function. Click OK and move on!";
-      alert(loadMessage);
+      if(confirm(loadMessage) == true){
+        window.location.href = "function3.php";
+      }
     }
     window.onload = loadMessage;
   </script>
