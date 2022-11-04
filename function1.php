@@ -9,7 +9,5 @@
     
     return "These are some fruits:<br>Apple<br>Orange<br>Banana"
   }
-  <button type="button" onclick="myFunction()">List Those Fruits!</button>
-
 </script>
-    
+<button type="button" onclick="myFunction()">List Those Fruits!</button>
