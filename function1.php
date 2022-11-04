@@ -12,7 +12,7 @@
   }
   function fruits(){
     let fruits = [ "Apple", "Orange", "Peach", "Banana", "Plum", "Grape", "Strawberry", "Blueberry", "Mango", "Your mom" ];
-    return "Here is a fruit:<br>" + </script><b><script>fruits[a]</script></b><script>;
+    return "Here is a fruit:<br>" + fruits[a];
   }
 </script>
 
