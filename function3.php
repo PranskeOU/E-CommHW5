@@ -1,8 +1,26 @@
 <?php require_once("header.php"); ?>
-<div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange" length="2000">
-</div>
-
+<button type="button" onclick="myFunction()">Draw a rectangle</button>
+<p id="drawRectangle"></p>
+<script>
+  function MyFunction(){
+    document.GetElementById("drawRectangle").innerHTML = drawRectangle();
+  }
+  
+function drawRectangle(){
+  setup();
+  draw();
+}
+  
+function setup() { 
+    createCanvas(400, 300); 
+} 
+function draw() { 
+    background(220);
+    let c = color('green');
+    fill(c);
+    rect(50, 50, 300, 200); 
+}
+</script>
 <!--
 <button type="button" onclick="myFunction()">Show me a fruit</button>
 <p id="fruits"></p>
