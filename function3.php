@@ -9,7 +9,10 @@ function drawRectangles() {
     }
 
     const ctx = canvas.getContext('2d');
-    var randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+    var time = new Date();
+    while(time != 'December 31, 2025 00:00:00'){
+         var randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+    }
     ctx.fillStyle = randomColor;
     ctx.fillRect(100, 100, 150, 100);
 }
