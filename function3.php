@@ -1,6 +1,6 @@
 <?php require_once("header.php"); ?>
 <div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange" length="200">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange" length="2000">
 </div>
 
 <!--
