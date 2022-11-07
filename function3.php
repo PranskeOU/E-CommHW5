@@ -1,25 +1,23 @@
 <?php require_once("header.php"); ?>
-<button type="button" onclick="myFunction()">Draw a rectangle</button>
-<p id="drawRectangle"></p>
+<canvas id="canvas" height="400" width="500"></canvas>
 <script>
-  function MyFunction(){
-    document.GetElementById("drawRectangle").innerHTML = drawRectangle();
-  }
-  
-function drawRectangle(){
-  setup();
-  draw();
+function drawRectangles() {
+    const canvas = document.querySelector('#canvas');
+
+    if (!canvas.getContext) {
+        return;
+    }
+
+    const ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = '#F9DC5C';
+    ctx.fillRect(100, 100, 150, 100);
+
+    ctx.fillStyle = 'rgba(0,0,255,0.5)';
+    ctx.fillRect(200, 150, -150, -100);
 }
-  
-function setup() { 
-    createCanvas(400, 300); 
-} 
-function draw() { 
-    background(220);
-    let c = color('green');
-    fill(c);
-    rect(50, 50, 300, 200); 
-}
+
+drawRectangles();
 </script>
 <!--
 <button type="button" onclick="myFunction()">Show me a fruit</button>
