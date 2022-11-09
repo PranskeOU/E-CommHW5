@@ -4,7 +4,7 @@
 <img style="display:none;" id="Img" src="https://www.ou.edu/price/mis/_jcr_content/headeripar/image.img.png/1534452278211.png" />
 <script>
 function myFunction(){
-	document.getElementById('Img').src='https://www.ou.edu/price/mis/_jcr_content/headeripar/image.img.png/1534452278211.png'.style.display="block";
+	document.getElementById('Img').src='https://www.ou.edu/price/mis/_jcr_content/headeripar/image.img.png/1534452278211.png'.style.display="block".innerHTML;
 	document.getElementByID('Btn').style.display="none".innerHTML;
 }
 </script>
