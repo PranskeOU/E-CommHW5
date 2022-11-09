@@ -1,5 +1,5 @@
 <?php require_once("header.php"); ?>
-<button type="button" id="showText" onclick="showText()">Show random text</button>
+<button type="button" onclick="showText()">Show random text</button>
 <h5 id="showText"></h5>
 <script>
 function myFunction(){
