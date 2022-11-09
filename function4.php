@@ -7,7 +7,7 @@
     </style>
 </head>
 
-<button id="Btn" onclick="myFunction()">Show the MIS Logo!</button>
+<button type="button" id="Btn" onclick="myFunction()">Show the MIS Logo!</button>
 <img id="Img" src="https://www.ou.edu/price/mis/_jcr_content/headeripar/image.img.png/1534452278211.png"></img>
 <script>
 function myFunction(){
