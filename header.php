@@ -17,9 +17,9 @@
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="function1.php" href="function1.php">JavaScript Function 1: <b>Fruits</b></a>
         <a class="nav-link active" aria-current="function2.php" href="function2.php">JavaScript Function 2: <b>Confirm</b></a>
-        <a class="nav-link active" aria-current="function3.php" href="function3.php">JavaScript Function 3: <b>xyz</b></a>
-        <a class="nav-link active" aria-current="function4.php" href="function4.php">JavaScript Function 4: <b>xyz</b></a>
-        <a class="nav-link active" aria-current="function5.php" href="function5.php">JavaScript Function 5: <b>xyz</b></a>
+        <a class="nav-link active" aria-current="function3.php" href="function3.php">JavaScript Function 3: <b>Colorful Rectangle</b></a>
+        <a class="nav-link active" aria-current="function4.php" href="function4.php">JavaScript Function 4: <b>Button to Text</b></a>
+        <a class="nav-link active" aria-current="function5.php" href="function5.php">JavaScript Function 5: <b>Counter</b></a>
       </div>
     </div>
   </div>
