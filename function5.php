@@ -8,7 +8,7 @@
   function myFunction() {
     document.getElementById("counter").innerHTML = counter();
     a++;
-    
+  }
   function counter(){
     return "Counter: " + a;
 </script>
