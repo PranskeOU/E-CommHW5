@@ -1,7 +1,7 @@
 <?php require_once("header.php"); ?>
 <canvas id="canvas" height="400" width="500"></canvas>
 <script>
-function drawRectangles() {
+setinterval(function drawRectangles() {
     const canvas = document.querySelector('#canvas');
 
     if (!canvas.getContext) {
@@ -13,9 +13,9 @@ function drawRectangles() {
     var randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
     ctx.fillStyle = randomColor;
     ctx.fillRect(100, 100, 150, 100);
-}
+},200)
 
-setinterval(drawRectangles(),200);
+drawRectangles();
 </script>
 <!--
 <button type="button" onclick="myFunction()">Show me a fruit</button>
