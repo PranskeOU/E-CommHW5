@@ -1,7 +1,6 @@
 <?php require_once("header.php"); ?>
 <button type="button" onclick="myFunction()">Count</button>
 <p id="counter"></p>
-<script>
 
 <script>
   let a = 0;
