@@ -9,5 +9,5 @@
           i++;
           return i;
   }
-  window.onload = counter();
+  window.onload = myFunction();
 </script>
