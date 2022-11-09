@@ -1,6 +1,5 @@
 <?php require_once("header.php"); ?>
 <canvas id="canvas" height="400" width="500"></canvas>
-<div style="margin:auto;">
 <script>
 function drawRectangles() {
     const canvas = document.querySelector('#canvas');
@@ -16,9 +15,8 @@ function drawRectangles() {
     ctx.fillRect(100, 100, 150, 100);
 }
 
-drawRectangles();
+setinterval(drawRectangles(),200);
 </script>
-</div>
 <!--
 <button type="button" onclick="myFunction()">Show me a fruit</button>
 <p id="fruits"></p>
