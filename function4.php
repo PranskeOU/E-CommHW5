@@ -1,72 +1,12 @@
 <?php require_once("header.php"); ?>
+
+<button onclick="myFunction()">Show the MIS Logo!</button>
+
+<img id="Img" src="https://www.ou.edu/price/mis/_jcr_content/headeripar/image.img.png/1534452278211.png" style="width:100px">
+
 <script>
-message = document.getElementById("fly").innerHTML; // $ = taking a new line
-distance = 150; // pixel(s)
-speed = 200; // milliseconds
-
-var txt="",
-	num=0,
-	num4=0,
-	flyofle="",
-	flyofwi="",
-	flyofto="",
-	fly=document.getElementById("fly");
-
-
-function stfly() {
-	for(i=0;i != message.length;i++) {
-		if(message.charAt(i) != "$")
-			txt += "<span style='position:relative;visibility:hidden;' id='n"+i+"'>"+message.charAt(i)+"<\/span>";
-		else
-			txt += "<br>";
-	}
-	fly.innerHTML = txt;
-	txt = "";
-	flyofle = fly.offsetLeft;
-	flyofwi = fly.offsetWidth;
-	flyofto = fly.offsetTop;
-	fly2b();
+function myFunction(){
+	document.getElementById('Img').src='https://www.ou.edu/price/mis/_jcr_content/headeripar/image.img.png/1534452278211.png'
 }
 
-function fly2b() {
-	if(num4 != message.length) {
-		if(message.charAt(num4) != "$") {
-			var then = document.getElementById("n" + num4);
-			then.style.left = flyofle - then.offsetLeft + flyofwi / 2;
-			then.style.top = flyofto - then.offsetTop + distance;
-			fly3(then.id, parseInt(then.style.left), parseInt(then.style.left) / 5, parseInt(then.style.top), parseInt(then.style.top) / 5);
-		}
-		num4++;
-		setTimeout("fly2b()", speed);
-	}
-}
-
-function fly3(target,lef2,num2,top2,num3) {
-	if((Math.floor(top2) != 0 && Math.floor(top2) != -1) || (Math.floor(lef2) != 0 && Math.floor(lef2) != -1)) {
-		if(lef2 >= 0)
-			lef2 -= num2;
-		else
-			lef2 += num2 * -1;
-		if(Math.floor(lef2) != -1) {
-			document.getElementById(target).style.visibility = "visible";
-			document.getElementById(target).style.left = Math.floor(lef2);
-		} else {
-			document.getElementById(target).style.visibility = "visible";
-			document.getElementById(target).style.left = Math.floor(lef2 + 1);
-		}
-		if(lef2 >= 0)
-			top2 -= num3
-		else
-			top2 += num3 * -1;
-		if(Math.floor(top2) != -1)
-			document.getElementById(target).style.top = Math.floor(top2);
-		else
-			document.getElementById(target).style.top = Math.floor(top2 + 1);
-		setTimeout("fly3('"+target+"',"+lef2+","+num2+","+top2+","+num3+")",25)
-	}
-}
-	
-stfly()
 </script>
-<h4 id='fly'>Hello, my name is Nick Pranske and this is the 4th function. It spells out this statement character by character. 
-  This is pretty cool, but I can't think of any real-world application for it. Oh well!</h4>
