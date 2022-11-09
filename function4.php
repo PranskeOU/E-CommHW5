@@ -1,10 +1,11 @@
 <?php require_once("header.php"); ?>
-<button type="button" id="Btn" onclick="myFunction()">Show the MIS Logo!</button>
-<img style="display:none;" id="Img" src="https://www.ou.edu/price/mis/_jcr_content/headeripar/image.img.png/1534452278211.png" />
-
+<button type="button" id="showText" onclick="showText()">Show random text</button>
+<h5 id="showText"></h5>
 <script>
 function myFunction(){
-	document.getElementById('Img').src='https://www.ou.edu/price/mis/_jcr_content/headeripar/image.img.png/1534452278211.png'.style.display="block";
-	document.getElementByID('Btn').style.display="none".innerHTML;
+	document.getElementByID('showText').innerHTML = showText();
+}
+function showText(){
+	return "I ran out of ideas. This is a block of text.
 }
 </script>
