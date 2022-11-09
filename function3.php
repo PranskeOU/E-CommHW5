@@ -1,6 +1,6 @@
 <?php require_once("header.php"); ?>
 <canvas id="canvas" height="400" width="500"></canvas>
-<div margin:auto;>
+<div style="margin:auto;">
 <script>
 function drawRectangles() {
     const canvas = document.querySelector('#canvas');
