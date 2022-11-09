@@ -64,6 +64,9 @@ function fly3(target,lef2,num2,top2,num3) {
 			document.getElementById(target).style.top = Math.floor(top2 + 1);
 		setTimeout("fly3('"+target+"',"+lef2+","+num2+","+top2+","+num3+")",25)
 	}
+}
+	
+stfly()
 </script>
 <h4 id='fly'>Hello, my name is Nick Pranske and this is the 4th function. It spells out this statement character by character. 
   This is pretty cool, but I can't think of any real-world application for it. Oh well!</h4>
