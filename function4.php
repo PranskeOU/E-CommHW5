@@ -4,7 +4,7 @@
 <img style="display:none;" id="Img" src="myFunction()" />
 <script>
 function myFunction(){
-	document.getElementById('Img').src='https://www.ou.edu/price/mis/_jcr_content/headeripar/image.img.png/1534452278211.png'.style.display="block".innerHTML;
+	document.getElementById('Img').src='https://www.ou.edu/price/mis/_jcr_content/headeripar/image.img.png/1534452278211.png'.style.display="block";
 	document.getElementByID('Btn').style.display="none".innerHTML;
 }
 </script>
