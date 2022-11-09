@@ -6,6 +6,6 @@ function myFunction(){
 	document.getElementByID('showText').innerHTML = showText();
 }
 function showText(){
-	return "I ran out of ideas. This is a block of text.
+	return "I ran out of ideas. This is a block of text."
 }
 </script>
