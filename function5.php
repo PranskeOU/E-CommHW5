@@ -10,4 +10,5 @@
   }
   function counter(){
     return "Counter: " + a;
+  }
 </script>
