@@ -10,5 +10,5 @@
     a++;
     
   function counter(){
-    return a;
+    return "Counter: " + a;
 </script>
