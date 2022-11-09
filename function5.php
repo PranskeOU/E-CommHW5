@@ -1,13 +1,14 @@
 <?php require_once("header.php"); ?>
+<button type="button" onclick="myFunction()">Count</button>
 <p id="counter"></p>
 <script>
-  setInterval(function myFunction(){
-          document.getElementById("counter").innerHTML = counter();
-  },100)
+
+<script>
+  let a = 0;
+  function myFunction() {
+    document.getElementById("counter").innerHTML = counter();
+    a++;
+    
   function counter(){
-          let i=0;
-          i++;
-          return i;
-  }
-  window.onload = myFunction();
+    return a;
 </script>
